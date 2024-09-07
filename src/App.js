@@ -4,9 +4,12 @@ import { darkTheme } from "./utils/Themes.js";
 import Navbar from "./components/Navbar/index.js";
 import Hero from "./components/HeroSection/index.js";
 import Skills from "./components/Skills/index.js";
-import Education from "./components/Education/index.js";
 import { BrowserRouter as Router } from "react-router-dom";
 import Experience from "./components/Experience/index.js";
+import Projects from "./components/Projects/index.js";
+import Education from "./components/Education/index.js";
+import Contact from "./components/Contact/index.js";
+
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -41,7 +44,11 @@ function App() {
             <Wrapper>
               <Skills />
               <Experience />
+            </Wrapper>
+            <Projects />
+            <Wrapper>
               <Education />
+              <Contact />
             </Wrapper>
           </Body>
         </Router>

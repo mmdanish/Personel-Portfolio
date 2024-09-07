@@ -87,7 +87,7 @@ const Experience = () => {
                   <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent sx={{ py: "12px", px: "2" }}>
-                  <ExperienceCard experience={experience}/>
+                  <ExperienceCard experience={experience} />
                 </TimelineContent>
               </TimelineItem>
             ))}
