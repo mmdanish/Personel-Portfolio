@@ -128,55 +128,57 @@ const Projects = () => {
               value="web app"
               onClick={() => setToggle("web app")}
             >
-              WEB APP'S
+              WEB APPS
             </ToggleButton>
           ) : (
             <ToggleButton value="web app" onClick={() => setToggle("web app")}>
-              WEB APP'S
+              WEB APPS
             </ToggleButton>
           )}
           <Divider />
-          {toggle === "android app" ? (
+          {toggle === "html bootstrap" ? (
             <ToggleButton
               active
-              value="android app"
-              onClick={() => setToggle("android app")}
+              value="html bootstrap"
+              onClick={() => setToggle("html bootstrap")}
             >
-              ANDROID APP'S
+              HTML & BOOTSTRAP
             </ToggleButton>
           ) : (
             <ToggleButton
-              value="android app"
-              onClick={() => setToggle("android app")}
+              value="html bootstrap"
+              onClick={() => setToggle("html bootstrap")}
             >
-              ANDROID APP'S
+              HTML & BOOTSTRAP
             </ToggleButton>
           )}
           <Divider />
-          {toggle === "machine learning" ? (
+          {toggle === "react ui" ? (
             <ToggleButton
               active
-              value="machine learning"
-              onClick={() => setToggle("machine learning")}
+              value="react ui"
+              onClick={() => setToggle("react ui")}
             >
-              MACHINE LEARNING
+              REACT UI
             </ToggleButton>
           ) : (
             <ToggleButton
-              value="machine learning"
-              onClick={() => setToggle("machine learning")}
+              value="react ui"
+              onClick={() => setToggle("react ui")}
             >
-              MACHINE LEARNING
+              REACT UI
             </ToggleButton>
           )}
         </ToggleButtonGroup>
         <CardContainer>
           {toggle === "all" &&
-            projects.map((project) => <ProjectCard project={project} />)}
+            projects.map((project, index) => (
+              <ProjectCard key={index} project={project} />
+            ))}
           {projects
             .filter((item) => item.category === toggle)
-            .map((project) => (
-              <ProjectCard project={project} />
+            .map((project, index) => (
+              <ProjectCard key={index} project={project} />
             ))}
         </CardContainer>
       </Wrapper>

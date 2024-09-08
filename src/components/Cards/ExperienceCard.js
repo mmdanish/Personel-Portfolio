@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import CompanyLogo from "../../images/CompanyLogo.jpg"
 
 const Card = styled.div`
   width: 650px;
@@ -105,11 +106,21 @@ const Skill = styled.div`
   }
 `;
 
+const Image = styled.img`
+    height: 50px;
+    background-color: #000;
+    border-radius: 10px;
+    margin-top: 4px;
+    @media only screen and (max-width: 768px){
+        height: 40px;
+    }
+`
+
 const ExperienceCard = ({ experience }) => {
   return (
     <Card>
       <Top>
-        
+        <Image src={CompanyLogo} alt="logo" />
         <Body>
           <Role>{experience.role}</Role>
           <Company>{experience.company}</Company>
