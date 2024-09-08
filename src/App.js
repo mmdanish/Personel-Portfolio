@@ -9,6 +9,7 @@ import Experience from "./components/Experience/index.js";
 import Projects from "./components/Projects/index.js";
 import Education from "./components/Education/index.js";
 import Contact from "./components/Contact/index.js";
+import Footer from "./components/Footer/index.js";
 
 
 const Body = styled.div`
@@ -50,6 +51,7 @@ function App() {
               <Education />
               <Contact />
             </Wrapper>
+            <Footer />
           </Body>
         </Router>
       </ThemeProvider>
