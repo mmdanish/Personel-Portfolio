@@ -25,6 +25,7 @@ export const Bio = {
   linkedin: "https://www.linkedin.com/in/mmdanish/",
   twitter: "https://x.com/Danish_5452",
   insta: "https://www.instagram.com/__.mohd.danish._/",
+  whatsapp: "https://wa.me/916238237162?text=Hello",
   facebook: "https://www.facebook.com/mohammed.danish.5036/",
 };
 

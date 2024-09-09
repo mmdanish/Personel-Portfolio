@@ -1,5 +1,7 @@
 import React, { useRef } from "react";
+import emailjs from '@emailjs/browser';
 import styled from "styled-components";
+import { Snackbar } from '@mui/material';
 
 const Container = styled.div`
   display: flex;
@@ -133,11 +135,18 @@ const ContactButton = styled.input`
 `;
 
 const Contact = () => {
-  const form = useRef(null);
+  const [open, setOpen] = React.useState(false);
+  const form = useRef();
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    form.current.reset();
+      e.preventDefault();
+      emailjs.sendForm('service_mvttf6s', 'template_c5hbrbh', form.current, 'Nb3HyK4S1s_k3Cwdo')
+        .then((result) => {
+          setOpen(true);
+          form.current.reset();
+        }, (error) => {
+          console.log(error.text);
+        });
   };
   return (
     <Container>
@@ -148,12 +157,19 @@ const Contact = () => {
         </Desc>
         <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
-          <ContactInput placeholder="Your Name" name="from_name" />
+          <ContactInput placeholder="Your Email" name="email" />
+          <ContactInput placeholder="Your Name" name="name" />
           <ContactInput placeholder="Subject" name="subject" />
           <ContactInputMessage placeholder="Message" rows="4" name="message" />
           <ContactButton type="submit" value="Send" />
         </ContactForm>
+        <Snackbar
+          open={open}
+          autoHideDuration={6000}
+          onClose={()=>setOpen(false)}
+          message="Email sent successfully!"
+          severity="success"
+        />
       </Wrapper>
     </Container>
   );

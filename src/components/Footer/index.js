@@ -4,6 +4,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from '@mui/icons-material/Facebook';
+import WhatsAppIcon from "@mui/icons-material/WhatsApp"
 import styled from "styled-components";
 
 const FooterContainer = styled.div`
@@ -104,6 +105,9 @@ const Footer = () => {
           <NavLink href="#education">Education</NavLink>
         </NavItems>
         <SocialMediaIcons>
+        <SocialMediaIcon href={Bio.whatsapp} target="_Blank">
+            <WhatsAppIcon />
+          </SocialMediaIcon>
           <SocialMediaIcon href={Bio.insta} target="_Blank">
             <InstagramIcon />
           </SocialMediaIcon>
