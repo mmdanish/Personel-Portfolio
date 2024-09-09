@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Personel-Portfolio/static/css/main.bf538fe7.css",
+    "main.js": "/Personel-Portfolio/static/js/main.d9369992.js",
+    "static/media/Ecommerce.jpg": "/Personel-Portfolio/static/media/Ecommerce.3e4c6e1275d92c3bb434.jpg",
+    "static/media/Cheese.jpg": "/Personel-Portfolio/static/media/Cheese.685d241000e1665cd443.jpg",
+    "static/media/NotesApp.png": "/Personel-Portfolio/static/media/NotesApp.1450439b97e79f33f4b0.png",
+    "static/media/Realestate.jpg": "/Personel-Portfolio/static/media/Realestate.5ffce7d4a6c65f9dc351.jpg",
+    "static/media/WeatherApp.png": "/Personel-Portfolio/static/media/WeatherApp.8de544ab4eec98d42dd2.png",
+    "static/media/Registration.jpg": "/Personel-Portfolio/static/media/Registration.0ad0a9f2092796a9ce29.jpg",
+    "static/media/Trackify.jpg": "/Personel-Portfolio/static/media/Trackify.6bf27a2b7ea14783e616.jpg",
+    "static/media/UserRegistration.png": "/Personel-Portfolio/static/media/UserRegistration.958d69339cfc49adf995.png",
+    "static/media/HeroImage.jpg": "/Personel-Portfolio/static/media/HeroImage.288b4130451fce22224a.jpg",
+    "static/media/QrGenerator.png": "/Personel-Portfolio/static/media/QrGenerator.ac29eff6b77a36c49ce7.png",
+    "static/media/QuizApp.png": "/Personel-Portfolio/static/media/QuizApp.524a0078c5c8feda2cf5.png",
+    "static/media/PasswordGenerator.png": "/Personel-Portfolio/static/media/PasswordGenerator.c138e299c69529a26538.png",
+    "static/media/TicTacToe.png": "/Personel-Portfolio/static/media/TicTacToe.b8f23a5307263a5760fa.png",
+    "static/media/SchoolLogo.jpg": "/Personel-Portfolio/static/media/SchoolLogo.2148c24a62d84f962a22.jpg",
+    "static/media/Islahiya.jpg": "/Personel-Portfolio/static/media/Islahiya.f3a0e60b785a28526844.jpg",
+    "static/media/CollegeLogo.png": "/Personel-Portfolio/static/media/CollegeLogo.ad46f2a910d86ad67fa4.png",
+    "index.html": "/Personel-Portfolio/index.html",
+    "main.bf538fe7.css.map": "/Personel-Portfolio/static/css/main.bf538fe7.css.map",
+    "main.d9369992.js.map": "/Personel-Portfolio/static/js/main.d9369992.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf538fe7.css",
+    "static/js/main.d9369992.js"
+  ]
+}
