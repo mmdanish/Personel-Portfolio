@@ -21,7 +21,7 @@ export const Bio = {
     "Hey there! I'm Danish, a BSc Computer Science graduate currently gaining hands-on experience as a MERN Full Stack Intern.",
   github: "https://github.com/mmdanish",
   resume:
-    "https://drive.google.com/file/d/1nYEsNgvuJVn5gfm9U29PKXqDbgyS5D5p/view?usp=sharing",
+    "https://drive.google.com/file/d/15IwGH1vqCtBiYL43if1s_eILLiMJPhfd/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/mmdanish/",
   twitter: "https://x.com/Danish_5452",
   insta: "https://www.instagram.com/__.mohd.danish._/",
